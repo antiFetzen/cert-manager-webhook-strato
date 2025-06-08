@@ -1,0 +1,3 @@
+[submodule "internal/python-strato-certbot/lib/strato-certbot"]
+	path = internal/python-strato-certbot/lib/strato-certbot
+	url = https://github.com/Buxdehuda/strato-certbot.git

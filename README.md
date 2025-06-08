@@ -1,58 +1,42 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png" height="256" width="256" alt="cert-manager project logo" />
+    <img src="https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png" height="196" width="196" alt="cert-manager project logo" />
+</p>
+<p align="center">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MzEgMTE0Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZjgwO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTU1LjgyLDE2QTE1Ljg3LDE1Ljg3LDAsMCwxLDM5Ljk0LjEzSDk1LjVBMTUuODcsMTUuODcsMCwwLDEsMTExLjM3LDE2VjcxLjU2QTE1Ljg3LDE1Ljg3LDAsMCwxLDk1LjUsNTUuNjlWMjMuOTRBNy45NCw3Ljk0LDAsMCwwLDg3LjU2LDE2WiIvPjxyZWN0IGNsYXNzPSJhIiB4PSIwLjI2IiB5PSIzMS44OCIgd2lkdGg9Ijc5LjM3IiBoZWlnaHQ9Ijc5LjM3IiByeD0iNy45NCIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTkwLjQ5LDEwMy41MmMtNC40LDguMzMtMTUuODMsOC45Mi0yNC42Myw4LjkyLTYuNzksMC0xMy41Ny0uNDctMTcuNS0uODMtNC44OC0uNDctNi4xOS0xLjY2LTYuMTktNC4xNnYtNGMwLTQuMjkuNzItNS43MSw0LjUzLTUuNzEsNywwLDEwLjU5LDEsMjAuOTQsMSw4LDAsOS41Mi0uNiw5LjUyLTcuNzQsMC04LjA5LS4xMi04LjY4LTQuMTYtMTAuMzUtNS4xMi0yLjE0LTEwLTQuMTctMTUtNi4zMS0xMi4zOC01LjM1LTE0Ljg3LTcuNzMtMTQuODctMjEuODksMC05LjA1LDEuNjYtMTYuMDcsMTEuNzgtMTkuNCw0LjQtMS40Myw5LjUyLTEuOTEsMTYuNTQtMS45MSw1LjQ3LDAsOC4zMy4yNCwxMy40NS42LDQuODcuMzYsNi4zLDEuNTUsNi4zLDQuMTZ2My45M2MwLDQuMjktLjgzLDUuNzEtNC42NCw1LjcxLTQuMTYsMC00LjUyLS43MS0yMS40Mi0uNzEtNi42NiwwLTYuNDIsMi44Ni02LjQyLDguNjksMCw0LjI4LjExLDUuMjMsNC4xNiw3LDMuMjEsMS40Myw2LjU1LDIuNzQsOS43Niw0LjE2LDE2LjU0LDcsMjAuMTEsOC42OSwyMC4xMSwyMi4yNkMxOTIuNzUsOTEuMzgsMTkyLjYzLDk5LjM1LDE5MC40OSwxMDMuNTJaIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0yNTUuNjUsNDUuNTZjLTYuNzgsMC0xMi4zOC0uMTItMTcuNDktLjI0djYwLjgyYzAsMy41Ny0xLjY3LDUuMjMtNS4xMiw1LjIzaC01LjEyYy0zLjkzLDAtNS43MS0xLjA3LTUuNzEtNS4yM1Y0NS4zMmMtNS4xMi4xMi0xMC44My4yNC0xNy42MS4yNC00Ljg4LDAtNS0zLjA5LTUtNS41OVYzNi43NmMwLTQsMi4yNi00Ljg4LDUtNC44OGg1MS4wNWMyLjc0LDAsNS4xMi44Myw1LjEyLDQuODhWNDBDMjYwLjc3LDQyLjQ3LDI2MC41Myw0NS41NiwyNTUuNjUsNDUuNTZaIi8+PHBhdGggY2xhc3M9ImEiIGQ9Ik0zMjMuNDMsMTExLjM3aC03LjE0Yy0zLDAtNS0uMzUtNy4yNi0zLjIxTDI4OC44LDgyLjQ1aC0zLjY5djIzLjY5YzAsMy41Ny0xLjU1LDUuMjMtNSw1LjIzSDI3NWMtMy45MywwLTUuODMtMS4wNy01LjgzLTUuMjNWMzYuNzZjMC00LjY1LDMuMjEtNC44OCw1LjgzLTQuODhoMjJjMTIuNDksMCwxNS43MS44MywyMC4zNSw1LjU5LDQuNCw0LjQsNi4xOSwxMiw2LjE5LDIyLjI1LDAsOS43Ni0yLjg2LDE1LjgzLTcuODYsMTkuMjhhMTguNTksMTguNTksMCwwLDEtOCwyLjg2TDMyNS45MywxMDRDMzI4LjMxLDEwNi44NSwzMjguNzgsMTExLjM3LDMyMy40MywxMTEuMzdabS0xOC45My02NWMtMS45LTEtNy0xLTkuMTYtMS0zLjgxLDAtNi45LjEyLTEwLjIzLjI0VjY4Ljg5aDEzLjQ1YzQuMjgsMCw2LjQyLS43Miw3LjczLTIuMzgsMS4wNy0xLjQzLDEuNDMtMy4zMywxLjQzLTcuNzRDMzA3LjcyLDUzLjg5LDMwNy4yNCw0Ny44MiwzMDQuNSw0Ni40WiIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNDAwLjc1LDExMS4zN2gtNi41NGMtMy42OSwwLTQuNzYtMS43OC01LjYtNC4xNmwtNS4yMy0xNC44OGMtNS4xMi4xMi04LjkzLjEyLTE0LjE2LjEyLTUsMC05LjQxLDAtMTMuNjktLjEybC00Ljc2LDE0Yy0xLjA3LDMuMjEtMiw1LTYuMDcsNWgtNS40N2MtNC4wNSwwLTQuNjUtMS4wNy00LjY1LTIuODVhMTIuNjUsMTIuNjUsMCwwLDEsMS0zLjY5bDI0LjM5LTY4LjA3YzEuMzEtMy42OSwyLjYyLTUuMzYsNy01LjM2aDQuODhjNC40MSwwLDUuNzIsMS42Nyw3LDUuMjRMNDA0LjU2LDEwNmE0LjkzLDQuOTMsMCwwLDEsLjQ4LDEuNzhDNDA1LDExMC43OCw0MDIuNjUsMTExLjM3LDQwMC43NSwxMTEuMzdaTTM2OS4zMyw1MmwtOS41MiwyOC4wOGMyLjc0LDAsNS45NS0uMTIsOS40MS0uMTIsMy42OCwwLDYuMTguMTIsOS42My4xMloiLz48cGF0aCBjbGFzcz0iYSIgZD0iTTQ1NC41NCw0NS41NmMtNi43OSwwLTEyLjM4LS4xMi0xNy41LS4yNHY2MC44MmMwLDMuNTctMS42Niw1LjIzLTUuMTIsNS4yM2gtNS4xMWMtMy45MywwLTUuNzItMS4wNy01LjcyLTUuMjNWNDUuMzJjLTUuMTEuMTItMTAuODIuMjQtMTcuNjEuMjQtNC44OCwwLTUtMy4wOS01LTUuNTlWMzYuNzZjMC00LDIuMjYtNC44OCw1LTQuODhoNTEuMDZjMi43MywwLDUuMTEuODMsNS4xMSw0Ljg4VjQwQzQ1OS42NSw0Mi40Nyw0NTkuNDEsNDUuNTYsNDU0LjU0LDQ1LjU2WiIvPjxwYXRoIGNsYXNzPSJhIiBkPSJNNTIxLjgyLDEwMy44N2MtNS43Miw2Ljc5LTEzLjY5LDEwLTI1LDEwcy0xOS41Mi0zLjIxLTI1LjExLTEwYy03LTguMzItOC44MS0xOS44Ny04LjgxLTMyLjEzczEuNzktMjMuOCw4LjgxLTMyLjEzYzUuODMtNi45LDE0LTEwLDI1LjExLTEwczE5LjE1LDMuMDksMjUsMTBjNyw4LjMzLDguOTIsMTkuODgsOC45MiwzMi4xM1M1MjguODQsOTUuNTUsNTIxLjgyLDEwMy44N1pNNTExLjU4LDUxLjE2Yy0yLjYxLTUuNi04LjA5LTcuNjItMTQuNzUtNy42MnMtMTIuMTQsMi0xNC43Niw3LjYyYy0yLjI2LDUtMi42MiwxNC41Mi0yLjYyLDIwLjU4cy4zNiwxNS40OCwyLjYyLDIwLjQ3YzIuNjIsNS42LDguMDksNy43NCwxNC43Niw3Ljc0czEyLjE0LTIuMTQsMTQuNzUtNy43NGMyLjI2LTUsMi42Mi0xNC40LDIuNjItMjAuNDdTNTEzLjg0LDU2LjE1LDUxMS41OCw1MS4xNloiLz48L3N2Zz4=" width="600" alt="cert-manager project logo" />
 </p>
 
-# ACME webhook example
 
-The ACME issuer type supports an optional 'webhook' solver, which can be used
-to implement custom DNS01 challenge solving logic.
+# STRATO DNS Webhook for cert-manager
 
-This is useful if you need to use cert-manager with a DNS provider that is not
-officially supported in cert-manager core.
+---
 
-## Why not in core?
+This [cert-manager](https://cert-manager.io/) webhook implementation enables you to solve the [ACME DNS-01 challenges](https://cert-manager.io/docs/configuration/acme/dns01/#configuring-dns01-challenge-provider) for **STRATO**.
 
-As the project & adoption has grown, there has been an influx of DNS provider
-pull requests to our core codebase. As this number has grown, the test matrix
-has become un-maintainable and so, it's not possible for us to certify that
-providers work to a sufficient level.
+> [!NOTE]
+> Under the hood, the webhook utilizes [strato-certbot](https://github.com/Buxdehuda/strato-certbot) from [Buxdehuda](https://github.com/Buxdehuda). Thanks for the great work 🙏
+> 
+> To execute the python code [go-embed-python](https://github.com/kluctl/go-embed-python) is used.
 
-By creating this 'interface' between cert-manager and DNS providers, we allow
-users to quickly iterate and test out new integrations, and then packaging
-those up themselves as 'extensions' to cert-manager.
 
-We can also then provide a standardised 'testing framework', or set of
-conformance tests, which allow us to validate that a DNS provider works as
-expected.
+# Usage
 
-## Creating your own webhook
+---
 
-Webhook's themselves are deployed as Kubernetes API services, in order to allow
-administrators to restrict access to webhooks with Kubernetes RBAC.
+> TODO: content
 
-This is important, as otherwise it'd be possible for anyone with access to your
-webhook to complete ACME challenge validations and obtain certificates.
+# Installation
 
-To make the set up of these webhook's easier, we provide a template repository
-that can be used to get started quickly.
+---
 
-### Creating your own repository
+> TODO: content
 
-### Running the test suite
 
-All DNS providers **must** run the DNS01 provider conformance testing suite,
-else they will have undetermined behaviour when used with cert-manager.
+# Testing
 
-**It is essential that you configure and run the test suite when creating a
-DNS01 webhook.**
+---
 
-An example Go test file has been provided in [main_test.go](https://github.com/cert-manager/webhook-example/blob/master/main_test.go).
-
-You can run the test suite with:
+> TODO: content
 
 ```bash
 $ TEST_ZONE_NAME=example.com. make test
 ```
-
-The example file has a number of areas you must fill in and replace with your
-own options in order for tests to pass.
