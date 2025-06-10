@@ -2,8 +2,6 @@
 
 # STRATO DNS Webhook for cert-manager
 
----
-
 This [cert-manager](https://cert-manager.io/) webhook implementation enables you to solve the [ACME DNS-01 challenges](https://cert-manager.io/docs/configuration/acme/dns01/#configuring-dns01-challenge-provider) for **STRATO**.
 
 > [!NOTE]
@@ -16,42 +14,30 @@ This [cert-manager](https://cert-manager.io/) webhook implementation enables you
 
 # Usage
 
----
-
-> TODO: content
-
-# Installation
-
----
-
-
-
-
-
-> TODO: content
+> TODO: add content
 
 
 # Testing
 
----
-
 ## Run Tests
 
-1. Add your credential within `testdata/strato/config.json` for more details see the `README.md` in the directory.
+It is very easy to test the webhook from your local computer to check the general functionality of the module.
 
 
+### 1. Modify config
+Add your credential within `testdata/strato/config.json` for more details see the `README.md` in the directory.
 
-2. Download modules
+### 2. Download modules
 ```bash
 go mod download
 ```
 
-3. Generate python binaries for **go-embed-python**
+### 3. Generate python binaries for **go-embed-python**
 ```bash
 go generate ./...
 ```
 
-4. Run test
+### 4. Run test
 ```bash
 $ TEST_ZONE_NAME=example.com. make test
 ```
