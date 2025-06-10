@@ -1,10 +1,4 @@
-<p align="center">
-    <img src="https://raw.githubusercontent.com/cert-manager/cert-manager/d53c0b9270f8cd90d908460d69502694e1838f5f/logo/logo-small.png" height="196" width="196" alt="cert-manager project logo" />
-</p>
-<p align="center">
-    <img src="https://raw.githubusercontent.com/antiFetzen/cert-manager-webhook-strato/refs/heads/master/docs/images/strato-logo.svg" width="600" alt="cert-manager project logo" />
-</p>
-
+![Logo - cert-manager-webhook-strato](/docs/images/cert-manager-webhook-strato-logo.svg)
 
 # STRATO DNS Webhook for cert-manager
 
