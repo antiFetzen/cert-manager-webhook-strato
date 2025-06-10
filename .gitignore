@@ -20,3 +20,6 @@ _test
 
 # Webhook test config
 testdata/strato/config.json
+
+# go-embed-python binaries
+internal/python-strato-certbot/data

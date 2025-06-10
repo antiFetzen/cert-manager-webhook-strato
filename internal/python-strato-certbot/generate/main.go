@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	err := pip.CreateEmbeddedPipPackagesForKnownPlatforms("lib/strato-certbot/requirements.txt", "./data/")
+	err := pip.CreateEmbeddedPipPackagesForKnownPlatforms("./lib/strato-certbot/requirements.txt", "./data/")
 	if err != nil {
 		panic(err)
 	}

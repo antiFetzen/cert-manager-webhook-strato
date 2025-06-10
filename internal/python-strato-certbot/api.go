@@ -7,6 +7,7 @@ import (
 	"github.com/kluctl/go-embed-python/embed_util"
 	"github.com/kluctl/go-embed-python/python"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strconv"
 )
@@ -35,12 +36,14 @@ func setEnvironmentVariables(cfg types.StratoDNSProviderConfig, ch *v1alpha1.Cha
 }
 
 func executePython(fileName string) {
-	ep, err := python.NewEmbeddedPython("example")
+	tmpDir := filepath.Join(os.TempDir(), "cert-manager-webhook-strato")
+
+	ep, err := python.NewEmbeddedPythonWithTmpDir(tmpDir+"-python", true)
 	if err != nil {
 		panic(err)
 	}
 
-	lib, err := embed_util.NewEmbeddedFiles(data.Data, "./tmp/cert-manager-webhook-strato")
+	lib, err := embed_util.NewEmbeddedFilesWithTmpDir(data.Data, tmpDir+"-strato-certbot", true)
 	if err != nil {
 		panic(err)
 	}
@@ -51,6 +54,7 @@ func executePython(fileName string) {
 	if err != nil {
 		panic(err)
 	}
+
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	err = cmd.Run()

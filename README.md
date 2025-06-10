@@ -35,20 +35,23 @@ This [cert-manager](https://cert-manager.io/) webhook implementation enables you
 
 ---
 
-Generate package data for **go-embed-python**
-```bash
-go generate ./...
-```
+## Run Tests
 
-Download dependencies
+1. Add your credential within `testdata/strato/config.json` for more details see the `README.md` in the directory.
+
+
+
+2. Download modules
 ```bash
 go mod download
 ```
 
+3. Generate python binaries for **go-embed-python**
+```bash
+go generate ./...
+```
 
-
-> TODO: content
-
+4. Run test
 ```bash
 $ TEST_ZONE_NAME=example.com. make test
 ```
