@@ -16,6 +16,7 @@ To provide your credentials for the test suite modify the `testdata/strato/confi
 
 | Property         | Type     | Optional | Default | Comment    |
 |------------------|----------|----------|---------|------------|
+| `apiUrl`         | `string` | YES      |         |            |
 | `username`       | `string` | NO       |         |            |
 | `password`       | `string` | NO       |         |            |
 | `totpSecret`     | `string` | YES      |         |            |

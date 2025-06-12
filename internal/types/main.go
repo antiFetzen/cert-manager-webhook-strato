@@ -5,6 +5,7 @@ type StratoDNSProviderConfig struct {
 	// to be decoded.
 	// These fields will be set by users in the
 	// `issuer.spec.acme.dns01.providers.webhook.config` field.
+	ApiUrl         string `json:"apiUrl"`
 	Username       string `json:"username"`
 	Password       string `json:"password"`
 	TotpSecret     string `json:"totpSecret"`

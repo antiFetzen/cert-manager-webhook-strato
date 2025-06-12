@@ -22,6 +22,7 @@ func setEnv(name string, value string) {
 func setEnvironmentVariables(cfg types.StratoDNSProviderConfig, ch *v1alpha1.ChallengeRequest) {
 	// provide environment variables for python `strato-certbot.auth-hook`
 	//AUTHENTICATION
+	setEnv("STRATO_API_URL", cfg.ApiUrl)
 	setEnv("STRATO_AUTH_ENV_ENABLE", "TRUE")
 	setEnv("STRATO_USERNAME", cfg.Username)
 	setEnv("STRATO_PASSWORD", cfg.Password)

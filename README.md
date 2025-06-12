@@ -41,3 +41,13 @@ go generate ./...
 ```bash
 $ TEST_ZONE_NAME=example.com. make test
 ```
+
+# Docker Build
+
+```bash
+docker build -t antifetzen/cert-manager-webhook-strato:latest --platform=linux/amd64,linux/arm64,darwin/arm64 .
+```
+
+```bash
+docker push antifetzen/cert-manager-webhook-strato:latest
+```
